@@ -18,17 +18,17 @@ const {
 <div class="flex items-center justify-center bg-cyan-900 py-6 px-4 sm:py-8 sm:text-xl">
 	<a class="ml-8 flex items-center transition-all hover:text-cyan-400" href={`https://github.com/${github}`}
 		rel="noopener" target="_blank" aria-label="GitHub">
-		<FooterIcon icon="github" />
+		<FooterIcon client:load icon="github" />
 		<span class="hidden sm:block">Github</span>
 	</a>
 	<a class="ml-8 flex items-center transition-all hover:text-cyan-400" href={linkedin} rel="noopener" target="_blank"
 		aria-label="LinkedIn">
-		<FooterIcon icon="linkedin" />
+		<FooterIcon client:load icon="linkedin" />
 		<span class="hidden sm:block">LinkedIn</span>
 	</a>
 	<a class="flex items-center transition-all hover:text-cyan-400 ml-6" href={`https://discord.com/users/${discordID}`}
 		rel="noopener" target="_blank" aria-label="Discord">
-		<FooterIcon icon="discord" />
+		<FooterIcon client:load icon="discord" />
 		<span class="hidden sm:block">Discord</span>
 	</a>
 </div>
