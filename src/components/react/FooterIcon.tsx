@@ -1,4 +1,4 @@
-import { Componenet } from "react";
+import { ReactElement } from "react";
 import {
     faGithub,
     faLinkedin,
@@ -16,7 +16,7 @@ export default function FooterIcon({
     icon,
 }: {
     icon: keyof typeof icons;
-}): Componenet {
+}): ReactElement {
     if (!Object.keys(icons).includes(icon)) return <></>;
 
     return (
