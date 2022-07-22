@@ -1,0 +1,13 @@
+---
+import { Icon } from 'astro-icon';
+
+export interface Props {
+	icon: 'github' | 'linkedin' | 'discord';
+};
+
+const { icon } = Astro.props as Props;
+---
+
+<div class="mr-1 h-6 w-6 fill-current sm:h-8 sm:w-8">
+	<Icon name={`mdi:${icon}`} />
+</div>

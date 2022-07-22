@@ -1,0 +1,36 @@
+---
+import OrangeText from './OrangeText.astro';
+import avatar from '../assets/avatar.jpg';
+import YearsOfExperience from './react/YearsOfExperience';
+---
+
+<div class="flex w-full flex-col items-center justify-center bg-cyan-900 py-12">
+	<img class="animate-zoom-in-slow h-40 w-40 rounded-full shadow-2xl shadow-black/40" src={avatar}
+		alt="Uri Bar Ilan Avatar" height="160" width="160" />
+
+	<div class="mt-8 flex max-w-full flex-col items-center px-6 transition-all sm:max-w-2xl sm:px-12 xl:max-w-4xl">
+		<h2 class="animate-slide-in-left text-center text-2xl transition-all sm:text-4xl">
+			Hello, I'm Uri.
+		</h2>
+
+		<p class="animate-slide-in-left mt-8 text-center text-lg transition-all sm:text-xl">
+			I'm a <OrangeText>backend developer</OrangeText> with a lot of
+			<OrangeText>DevOps</OrangeText> and
+			<OrangeText>Linux</OrangeText> experience.
+			<br>
+			I mainly use
+			<OrangeText>Node.js</OrangeText>
+			-
+			(
+			<OrangeText>TypeScript</OrangeText>, <OrangeText>JavsScript</OrangeText> ) and
+			<OrangeText>Python</OrangeText> with over
+			<OrangeText>
+				<YearsOfExperience firstStartedYear={2015} client:idle />
+			</OrangeText> years of experience.
+		</p>
+		<p class="animate-slide-in-left mt-8 text-center text-lg transition-all sm:text-xl">
+			My favorite things in the technology realm are <OrangeText>Linux</OrangeText> and
+			<OrangeText>Backend development</OrangeText> - I'm NOT a <OrangeText>frontend developer</OrangeText>.
+		</p>
+	</div>
+</div>

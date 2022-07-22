@@ -1,16 +1,11 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Main from "../components/Main.astro";
+
+const title = 'Uri Bar Ilan';
+const description = "Uri Bar Ilan's personal website";
 ---
 
-<html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Astro</title>
-</head>
-
-<body>
-	<h1>Astro</h1>
-</body>
-
-</html>
+<BaseLayout {title} {description}>
+	<Main />
+</BaseLayout>
